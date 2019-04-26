@@ -1,0 +1,8 @@
+<view wx:key="key" wx:for="{{pagethree}}">
+  <view wx:if="{{item.checked==true}}">
+    <view style='background-color:yellow;padding:30rpx'>
+      <view>pages3</view>
+      这是pages3页，点击勾选pages3显示
+    </view>
+  </view>
+</view>
