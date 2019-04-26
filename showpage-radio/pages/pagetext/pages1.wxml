@@ -1,0 +1,8 @@
+<view wx:key="key" wx:for="{{pageone}}">
+  <view wx:if="{{item.checked==true}}">
+    <view style='background-color:blue;padding:30rpx'>
+      <view>pages1</view>
+            这是pages1页，点击勾选pages1显示
+    </view>
+  </view>
+</view>

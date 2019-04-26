@@ -1,0 +1,26 @@
+<!--pages/pagetext/pagetext.wxml-->
+<!--pages/cuptext/cuptext.wxml-->
+<view style="display:flex;padding:100rpx">
+  <radio-group wx:key="name" bindchange="radioChange1">
+    <radio wx:key="index" wx:for="{{pageone}}" bindtap="bindtap1" value="{{item.name}}" checked="{{item.checked}}">
+      <text>{{item.text}}</text>
+    </radio>
+  </radio-group>
+  <radio-group wx:key="name" bindchange="radioChange2">
+    <radio wx:key="index" wx:for="{{pagetwo}}" bindtap="bindtap2" value="{{item.name}}" checked="{{item.checked}}">
+      <text>{{item.text}}</text>
+    </radio>
+  </radio-group>
+  <radio-group wx:key="name" bindchange="radioChange3">
+    <radio wx:key="index" wx:for="{{pagethree}}" bindtap="bindtap3" value="{{item.name}}" checked="{{item.checked}}">
+      <text>{{item.text}}</text>
+    </radio>
+  </radio-group>
+</view>
+<!-------------pages1---------------------->
+<include src="../pagetext/pages1.wxml" />
+<!--------------pages2------------------------------>
+<include src="../pagetext/pages2.wxml" />
+<!------------pages3--------------------------------->
+<include src="../pagetext/pages3.wxml" />
+<!------------------------------------>
